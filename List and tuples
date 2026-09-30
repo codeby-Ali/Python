@@ -1,0 +1,191 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMOVXWoEuAXx4dTWjBJlz8F",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/codeby-Ali/Python/blob/main/List%20and%20tuples\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4TIKLplPnF05",
+        "outputId": "9fe0efd7-9fcd-4820-8374-c2aed052c45c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Apple', 'Banana', 'Mango']\n"
+          ]
+        }
+      ],
+      "source": [
+        "fruits = [\"Apple\", \"Banana\", \"Mango\"]\n",
+        "print(fruits)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = [\"Apple\", \"Banana\", \"Mango\"]\n",
+        "\n",
+        "fruits[0] = \"Grapes\"\n",
+        "\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cqR8RzHenppv",
+        "outputId": "a9bc5262-f1f7-498e-fd8a-a03eed4b3d00"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Grapes', 'Banana', 'Mango']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = (\"Apple\", \"Banana\", \"Mango\")\n",
+        "\n",
+        "fruits = list(fruits)\n",
+        "fruits[0] = \"Grapes\"\n",
+        "fruits = tuple(fruits)\n",
+        "\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dDHgO6cIoJRH",
+        "outputId": "e12fa5c6-77c5-446e-be4e-96987e6ec0e4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('Grapes', 'Banana', 'Mango')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = [\"Apple\", \"Banana\", \"Mango\"]\n",
+        "\n",
+        "fruits.pop(1)\n",
+        "\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NSukdn7Moczd",
+        "outputId": "6fefcbec-9df0-4ff7-b99c-299b6ce6a210"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Apple', 'Mango']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = [\"Apple\", \"Banana\", \"Mango\"]\n",
+        "\n",
+        "fruits.insert(1, \"Grapes\")\n",
+        "\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EfGFimSJqCpA",
+        "outputId": "a3b4643f-eaea-493d-bc5a-30959b68d656"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Apple', 'Grapes', 'Banana', 'Mango']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = [\"Apple\", \"Banana\", \"Mango\"]\n",
+        "\n",
+        "fruits.append(\"Orange\")\n",
+        "\n",
+        "print(fruits)"
+      ],
+      "metadata": {
+        "id": "SLPmv8wJqm0b",
+        "outputId": "91ef80ee-758f-4bc6-e980-4ad51bd8737b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Apple', 'Banana', 'Mango', 'Orange']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
